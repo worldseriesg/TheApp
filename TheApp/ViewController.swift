@@ -3,7 +3,7 @@
 //  TheApp
 //
 //  Created by Gary on 8/8/17.
-//  Copyright © 2017 Gary. All rights reserved.
+//  Copyright © 2017 Gary. All rights reserved..
 //
 
 import UIKit
