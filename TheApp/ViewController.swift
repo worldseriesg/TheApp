@@ -3,7 +3,7 @@
 //  TheApp
 //
 //  Created by Gary on 8/8/17.
-//  Copyright © 2017 Gary. All rights reserved..
+//  Copyright © 2017 Gary. All rights reserved.
 //
 
 import UIKit
@@ -12,18 +12,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var theLabel: UILabel!
 
-  var TapCount = 0
+    @IBOutlet weak var text1: UITextField!
+
+    @IBOutlet weak var text2: UITextField!
+    
+    var TapCount = 0
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        TapCount = TapCount + 1
-        print(TapCount)
-        
-        if TapCount >= 10 {
-            theLabel.text = ("Stop tapping the button my guy!!!")
+      theLabel.text = "The total is... \((Double(text1.text!)! + Double(text2.text!)!))"
+
         }
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

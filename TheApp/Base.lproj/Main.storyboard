@@ -21,35 +21,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtY-nA-HYj">
-                                <rect key="frame" x="155" y="60" width="104" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wassup Welcome!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtY-nA-HYj">
+                                <rect key="frame" x="131.66666666666669" y="60" width="151.00000000000006" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6q-kl-6ge">
                                 <rect key="frame" x="171" y="90" width="73" height="30"/>
-                                <state key="normal" title="Push Me!!!"/>
+                                <state key="normal" title="Push ME!!!"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epE-cI-oJJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEZ-BV-fHV">
+                                <rect key="frame" x="159" y="147" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="OIr-cY-xLB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMC-Y0-Lr6">
+                                <rect key="frame" x="157.33333333333331" y="185" width="99.999999999999943" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Xex-e0-KT7"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X6q-kl-6ge" firstAttribute="top" secondItem="RtY-nA-HYj" secondAttribute="bottom" constant="9" id="4QY-iR-3ki"/>
                             <constraint firstItem="RtY-nA-HYj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CyH-08-s9S"/>
+                            <constraint firstItem="iMC-Y0-Lr6" firstAttribute="top" secondItem="vEZ-BV-fHV" secondAttribute="bottom" constant="8" id="IPr-a3-Td9"/>
                             <constraint firstItem="X6q-kl-6ge" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TUP-zQ-9cD"/>
+                            <constraint firstItem="iMC-Y0-Lr6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adH-cd-0oq"/>
+                            <constraint firstItem="vEZ-BV-fHV" firstAttribute="top" secondItem="X6q-kl-6ge" secondAttribute="bottom" constant="27" id="dPO-NB-5WT"/>
+                            <constraint firstItem="vEZ-BV-fHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMJ-gY-6lW"/>
                             <constraint firstItem="RtY-nA-HYj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="xfn-bi-R3G"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="vEZ-BV-fHV" id="8nT-qr-qX6"/>
+                        <outlet property="text2" destination="iMC-Y0-Lr6" id="26w-Rh-oBk"/>
                         <outlet property="theLabel" destination="RtY-nA-HYj" id="MKE-QK-awN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="258" y="39"/>
+            <point key="canvasLocation" x="374" y="35"/>
         </scene>
     </scenes>
 </document>
